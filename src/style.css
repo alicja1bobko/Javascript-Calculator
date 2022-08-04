@@ -1,0 +1,119 @@
+
+* {
+  box-sizing: border-box;
+}
+:root{
+  --light-gray: #A8A8A8;
+  --dark-gray: #333333;
+  --light-orange: #FFB66B;
+  --orange: #FC9625;
+  --bcg: #010101;
+
+}
+#root,body, html {
+  margin: 0;
+  font-family: monospace, sans-serif;
+  color: white;
+  background-color: antiquewhite;
+  width:100%;
+  height:100%;
+}
+
+.calculator {
+  height:100%;
+  width: 100%;
+  padding: 0;
+  position: relative;
+
+}
+
+.centered{
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.board{
+  border: 2px solid #47476b;
+  padding: 0.5rem;
+  box-shadow: inset 6px 11px 11px 0px rgba(45, 45, 45, 0.23);
+  border-radius: 25px;
+  /* background: #0c0d45a6; */
+  background-color: var(--bcg);
+  width: 350px;
+  height: 570px;
+}
+
+.formula--screen{
+  min-height: 2em;
+  font-size: 1.3em;
+  color: var(--orange);
+  text-align: right;
+  /* vertical-align: text-top; */
+  line-height: 1.3em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.output--screen{
+  min-height: 3rem;
+  font-size: 3em;
+  text-align: right;
+  color: white;
+  line-height: 3em;
+}
+
+.buttons{
+  margin:auto;
+  display: grid;
+  grid-template-areas:
+    'clear erase mod divide'
+    'seven eight nine multiply'
+    'four five six subtract'
+    'one two three add'
+    'zero zero  decimal equals';
+    gap:4px;
+  width: 320px;
+  height: 360px;
+  justify-items: center;
+  align-items: center;
+
+}
+
+
+button{
+  border: none;
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 0.7rem 0.7rem;
+  border-radius: 50%;
+  width: 70px;
+  height: 65px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.operator{
+  background-color: var(--orange);
+}
+
+.modifier{
+  background-color: var(--light-gray);
+  color: var(--bcg);
+}
+
+#subtract{
+  background-color: var(--light-orange);
+}
+
+#zero{
+  grid-area: zero; 
+  width: 151px;
+  border-radius: 65px;
+  text-align: left;
+ padding-left: 30px;
+}
+
+
