@@ -37,34 +37,33 @@
 
 .board{
     padding: 0.7rem;
--webkit-box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
--moz-box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
-box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
+    box-shadow: 8px 7px 35px -7px rgba(66, 68, 90, 1);
     border-radius: 25px;
- 
     background-color: var(--bcg);
     width: 350px;
     height: 570px;
 }
 
 .formula--screen{
-    margin-top: 2.2rem;
-min-height: 2em;
-  font-size: 1.3em;
+  margin-top: 2.2rem;
+  min-height: 2em;
+  font-size: 1.4em;
   color: var(--orange);
   text-align: right;
   /* vertical-align: text-top; */
-
   overflow-wrap: break-word;
   word-wrap: break-word;
+   padding-right: 1rem;
 }
 
 .output--screen{
-min-height: 2.1em;
+  min-height: 2.1em;
   font-size: 3em;
   text-align: right;
   color: white;
- 
+  padding-right: 1rem;
 }
 
 .buttons{
