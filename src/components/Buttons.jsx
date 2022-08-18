@@ -2,18 +2,23 @@ import React, { Component } from "react";
 
 export class Buttons extends Component {
   render() {
-    const { number, operator, erase } = this.props;
+    const { number, operator, clear, decimal, erase, equals } = this.props;
     return (
       <div className="buttons">
         <button
           id="clear"
           value="clear"
           className="clear modifier"
-          onClick={erase}
+          onClick={clear}
         >
           AC
         </button>
-        <button id="erase" value="erase" className="erase modifier">
+        <button
+          id="erase"
+          value="erase"
+          className="erase modifier"
+          onClick={erase}
+        >
           +/&minus;
         </button>
         <button id="mod" value="%" className="mod modifier" onClick={operator}>
@@ -21,7 +26,7 @@ export class Buttons extends Component {
         </button>
         <button
           id="divide"
-          value="/"
+          value="÷"
           className="divide operator"
           onClick={operator}
         >
@@ -38,7 +43,7 @@ export class Buttons extends Component {
         </button>
         <button
           id="multiply"
-          value="x"
+          value="×"
           className="multiply operator"
           onClick={operator}
         >
@@ -76,10 +81,15 @@ export class Buttons extends Component {
         <button id="zero" value="0" className="zero number" onClick={number}>
           0
         </button>
-        <button id="decimal" value="," className="decimal">
+        <button id="decimal" value="." className="decimal" onClick={decimal}>
           ,
         </button>
-        <button id="equals" value="=" className="equals operator">
+        <button
+          id="equals"
+          value="="
+          className="equals operator"
+          onClick={equals}
+        >
           =
         </button>
       </div>
