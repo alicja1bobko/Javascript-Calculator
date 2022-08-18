@@ -4,6 +4,7 @@ import Output from "./components/Output";
 import Buttons from "./components/Buttons";
 import { isOperator, endsWithOperator } from "./utils/evaluation";
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -49,9 +50,9 @@ class App extends React.Component {
     });
   }
 
-  handleNumbers(e) {
+  handleNumbers(e, key) {
     let { formula, output, evaluated } = this.state;
-    const number = e.target.value;
+    const number = key || e.target.value;
 
     if (evaluated) {
       formula = "";
@@ -80,7 +81,7 @@ class App extends React.Component {
     });
   }
 
-  handleDecimal(e) {
+  handleDecimal() {
     let { formula, output, evaluated } = this.state;
 
     if (evaluated) {
@@ -104,9 +105,9 @@ class App extends React.Component {
     });
   }
 
-  handleOperators(e) {
+  handleOperators(e, key) {
     let { formula, output, evaluated } = this.state;
-    const operator = e.target.value;
+    const operator = key || e.target.value;
     const lastSign = formula.slice(-1);
 
     if (evaluated) formula = output;
