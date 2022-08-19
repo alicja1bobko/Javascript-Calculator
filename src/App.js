@@ -65,14 +65,15 @@ class App extends React.Component {
     if (formula.length > 49) {
       return this.maxSignsWarning();
     }
+    //prevents from number like e.g. 034
+    if (number !== "0" && formula.slice(-1) === "0")
+      formula = formula.slice(0, -1);
 
     if (output === "0" && number === "0") {
       output = "";
-      formula = formula.slice(0, -1) === "0" ? "" : "0";
+      formula = formula.slice(-1) === "0" ? "" : "0";
       return;
-    } else if (output === "0" || isOperator.test(output)) {
-      output = "";
-    }
+    } else if (output === "0" || isOperator.test(output)) output = "";
 
     this.setState({
       formula: formula + number,
