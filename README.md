@@ -1,6 +1,6 @@
 # Javascript Calculator
 
-This is the 4th Project for [FreeCodeCamp's Front End Development Libraries Projects](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator).
+This is the 4th Project for [FreeCodeCamp's Front End Development Libraries Projects](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator). <br>
 Additional features: <br>
 * +/- button for erasing <br>
 * calculator works also with keyboard
