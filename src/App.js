@@ -113,9 +113,10 @@ class App extends React.Component {
 
     if (evaluated) formula = output;
 
-    //prevents multiple operators in row
+    //prevents multiple operators in row except e.g. 5*-5=25
     if (isOperator.test(lastSign)) {
-      formula = formula.slice(0, -1);
+      if (!(/[×]/.test(lastSign) && operator === "-"))
+        formula = formula.slice(0, -1);
     }
 
     //if last number ends with dot prevent from clicking operator
