@@ -1,6 +1,6 @@
 # Javascript Calculator
 
-This is the 4th Project for [FreeCodeCamp's Front End Development Libraries Projects](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator). App displays a drum machine that can be triggered either by mouse click or keyboard.
+This is the 4th Project for [FreeCodeCamp's Front End Development Libraries Projects](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator).
 Additional features: <br>
 * +/- button for erasing <br>
 * calculator works also with keyboard
